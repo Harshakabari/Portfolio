@@ -733,4 +733,16 @@ footer{
   display:flex;
   gap:1rem;
 }
-  
+@media (max-width:600px) {
+  .hero-section{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-x: hidden;
+  }
+  ul li a {
+    margin-top: 550px;
+  }
+  ul{
+    margin-left: 120px;
+  }
+}
