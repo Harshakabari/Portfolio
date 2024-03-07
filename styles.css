@@ -12,6 +12,7 @@
 }
 :root {
   --bgOrange: #e84949;
+  --bgblue:#4e45d5;
 }
 
 #wrapper{
@@ -34,7 +35,7 @@
 
 .logo
 {
-   font-size:40px;
+   font-size:2.5rem;
    color: black;
 }
 
@@ -105,7 +106,7 @@ a{
 }
 
 .role{
-    color: #4e45d5;
+    color: var(--bgblue);
     font-weight: 800;
 }
 
@@ -293,7 +294,156 @@ a{
     height: 450px;
     width: 300px;
   }
-
+  #projects{
+    width:1200px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vh;
+    justify-content: center;
+    margin-top: -110px;
+  }
+  #projheading{
+    font-size: 2.5VW;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .card {
+    position: relative;
+    width: 1190px;
+    height: 320px;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    ;
+  }
+  
+  .bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 1180px;
+    height: 310px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+  }
+  
+  .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10%;
+    width: 1180px;
+    height: 310px;
+    border-radius: 50%;
+    background-color: var(--bgOrange);
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+  .blob1 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10%;
+    width: 1180px;
+    height: 310px;
+    border-radius: 50%;
+    background-color: var(--bgblue);
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+  
+  @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }
+  #imp{
+    width: 580px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+ 
+  
+  .pright{
+    margin-block: auto;
+    margin-inline: auto;
+  }
+  #hd{
+    font-family:cursive;
+    font-size: 2vw;
+  }
+  #desc{
+    max-width: 500px;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2vh;
+    font-weight: lighter;
+    color: grey;
+    font-size: large;
+  }
+  .iconlink{
+    margin-top: 2vh;
+    display: flex;
+    gap: 3vh;
+  }
+  .iconlink.a{
+    text-decoration: none; 
+    
+  }
+  #fa1{
+    font-size: 30px;
+    color: #1f1f1f;
+    text-decoration: none;
+    margin-top: 1vh;
+  }
+  #fa1:hover{
+    color: var(--bgOrange);
+    transition-duration: 0.3s;
+  }
+  #fa2{
+    font-size: 30px;
+    color: #1f1f1f;
+    text-decoration: none;
+    margin-top: 1vh;
+  }
+  #fa2:hover{
+    color: var(--bgblue);
+    transition-duration: 0.3s;
+  }
+  
   @keyframes scaleImage {
 
     0%{
