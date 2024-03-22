@@ -10,9 +10,28 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+body {
+  background: linear-gradient(143deg,#ffffff,var(--bgblue1),#ffffff,#ffffff,#ffffff,#ffffff);
+  background-size: 760% 560%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 :root {
   --bgOrange: #e84949;
   --bgblue:#4e45d5;
+  --bgblue1:#94c2fd;
 }
 .container{
     padding: 0 9rem;
@@ -147,12 +166,6 @@ a{
     border: solid 3px var(--bgOrange);
     color: black;
   }
-
-  body {
-    margin:0;
-    padding:0;
-    background: #ebebeb;
-  }
   ul {
     position:absolute;
     top:55%;
@@ -274,6 +287,7 @@ a{
 
   .user-image{
     padding:2.5rem;
+    background-color: white;
     filter:grayscale(1);
     transition:all 1s;
     animation: scaleImage 5s linear infinite;
@@ -385,9 +399,9 @@ a{
     object-fit: cover;
     border-radius: 10px;
   }
- 
+
   
-  .pright{
+.pright{
     margin-block: auto;
     margin-inline: auto;
   }
@@ -857,6 +871,5 @@ ul li a {
 #submit-btn i{
   font-size: 20px;
 }
-
 }
 
