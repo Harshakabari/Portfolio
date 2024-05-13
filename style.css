@@ -752,11 +752,11 @@ h1{
   border-radius:18px;
   box-shadow:0 0 0 3px rgba(233,33,99,0.3);
 }
-@media(max-width:1009px)
+@media(max-width:1000px)
 {
   .timeline{
     width:100%;
-    margin-right: 30px;
+    margin-left: -10px;
   }
 }
 .contactus-form-container{
