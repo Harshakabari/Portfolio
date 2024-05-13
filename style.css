@@ -81,8 +81,9 @@ nav ul li a:hover {
 }
 .hamburger-active {
   transition: all 0.3s ease-in-out;
-  transition-delay: 0.6s;
+  transition-delay: 0.2s;
   transform: rotate(45deg);
+  margin-top: 18px;
 }
 
 .hamburger-active .line:nth-child(2) {
@@ -91,7 +92,7 @@ nav ul li a:hover {
 
 .hamburger-active .line:nth-child(1),
 .hamburger-active .line:nth-child(3) {
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
 
 .hamburger-active .line:nth-child(1) {
@@ -112,7 +113,7 @@ nav ul li a:hover {
   width: 60%;
   height: 100vh;
   padding: 20% 0;
-  background:var(--bgSilverLake);
+  background:var(--bgDarkSapphier);
   transition: all 0.5s ease-in;
   z-index: 2;
 }
@@ -131,7 +132,7 @@ nav ul li a:hover {
 
 .menubar ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--bgsnowDrift);
   font-size: 95%;
   font-weight: 400;
   padding: 5px 10px;
