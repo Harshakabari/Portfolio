@@ -813,6 +813,7 @@ h1{
   .formfield-textarea{
     height:auto;
     padding-top:1rem;
+    resize: none;
   }
   
   #submit-btn{
