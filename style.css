@@ -882,6 +882,7 @@ h1{
       }
      nav .logo{
       margin-left: 50px;
+      font-size: larger;
      } 
      .hero-section{
       display: flex;
