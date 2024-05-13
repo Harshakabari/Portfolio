@@ -461,6 +461,9 @@ nav ul li a:hover {
       text-align: center;
       padding: 0 30px;
    }
+   .iconlink{
+      justify-content: center;
+   }
  }
   @media screen and (max-width: 576px) {
     .blog-slider__content {
@@ -753,45 +756,9 @@ h1{
 {
   .timeline{
     width:100%;
+    margin-right: 30px;
   }
 }
-/* @media(max-width:0px){
-  .timeline{
-    justify-content:center ;
-    width:100%;
-    margin: 0 auto;
-    padding-bottom:0;
-  }
-  h1{
-    font-size:40px;
-    text-align:center;
-  }
-  .timeline:before{
-    left:20px;
-    height:85%;
-  }
-  .timeline ul li:nth-child(odd),
-  .timeline ul li:nth-child(even)
-  {
-    width:100%;
-    text-align:left;
-    padding-left:50px;
-    padding-bottom:50px;
-  }
-  .timeline ul li:nth-child(odd):before,
-  .timeline ul li:nth-child(even):before
-  {
-    top:-18px;
-    left:16px;
-  }
-  .timeline ul li:nth-child(odd) .time,
-  .timeline ul li:nth-child(even) .time{
-    top:-30px;
-    left:50px;
-    right:inherit;
-  }
-} */
-
 .contactus-form-container{
     width:100%;
     background-color: var(--bgSilverLake);
@@ -967,8 +934,7 @@ h1{
       }
       .skill-container-left{
         align-items: center;
-        margin:auto;
-        width: 90%;
+        width: 100%;
       }
       .skill-heading{
         font-size: 33px;
@@ -976,12 +942,15 @@ h1{
       }
       .skill-heading{
         margin-left: -190px;
+        font-size: 30px;
+      }
+      .caps{
+        font-size: 50px;
       }
       .skill-container-right{
-        width:90%;
+        width: 100%;
         position:relative;
         gap:2rem;
-        margin-left: 15px;
       }
       .blob-style{
        height: 200px;
@@ -998,7 +967,7 @@ h1{
       }
       .contactus-heading{
         color:#ffff;
-        margin-left: -450px;
+        margin-left: -270px;
         margin-top: -13px;
       }
       
