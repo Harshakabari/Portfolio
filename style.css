@@ -918,7 +918,7 @@ h1{
     .hero-section-description{
       margin-top: 0.3rem;
       width: 90%;
-      text-align: justify;
+      text-align: center;
       font-weight: 400;
       color: grey;
     }  
