@@ -920,9 +920,13 @@ h1{
       top: 2px;
       padding: 0.5rem 1.2rem;
     }
+    .user-image{
+      border-radius: 100%;
+
+    }
    .user-image img{
-      height: 280px;
-      width: 160px;
+    border-radius: 100%;
+    
     }
     .hamburger {
       display: block;
