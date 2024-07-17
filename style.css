@@ -954,9 +954,8 @@ h1{
         align-items: center;
         width: 100%;
       }
-      .skill-heading{
-        font-size: 33px;
-        padding-left: 70px;
+      .skill-subHeading{
+        width: 100%;
       }
       .skill-heading{
         margin-left: -190px;
