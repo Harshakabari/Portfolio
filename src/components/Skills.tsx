@@ -18,30 +18,37 @@ import {
   SiDocker,
   SiGit,
   SiNginx,
+  SiRedux,
+  SiPostman,
+  SiBootstrap,
+  SiSupabase
 } from "react-icons/si";
 
 const Skills = () => {
   const skills: { name: string; Icon?: React.ComponentType<{ className?: string }> }[] = [
     { name: "HTML", Icon: SiHtml5 },
     { name: "CSS", Icon: SiCss3 },
+    { name: "Bootstrap", Icon: SiBootstrap },
     { name: "Tailwind CSS", Icon: SiTailwindcss },
     { name: "Javascript", Icon: SiJavascript },
     { name: "TypeScript", Icon: SiTypescript },
     { name: "React Js", Icon: SiReact },
+    { name: "NextJs", Icon: SiNextdotjs },
+    { name: "Redux", Icon: SiRedux },
     // { name: "Tanstack Query", Icon: SiReactquery },
     { name: "Node Js", Icon: SiNodedotjs },
     { name: "Express Js", Icon: SiExpress },
-    { name: "NextJs", Icon: SiNextdotjs },
     { name: "MongoDB", Icon: SiMongodb },
- 
-    { name: "Socket.io", Icon: SiSocketdotio },
-    { name: "AWS", Icon: SiAmazon },
     { name: "PostgreSQL", Icon: SiPostgresql },
+    { name: "Supabase", Icon: SiSupabase },
+    // { name: "Socket.io", Icon: SiSocketdotio },
+    { name: "AWS", Icon: SiAmazon },
     { name: "Python", Icon: SiPython },
     { name: "C++", Icon: SiCplusplus },
-    // { name: "Docker", Icon: SiDocker },
+    { name: "Docker", Icon: SiDocker },
     { name: "Git", Icon: SiGit },
-    // { name: "Nginx", Icon: SiNginx },
+    { name: "Nginx", Icon: SiNginx },
+    { name: "Postman", Icon: SiPostman },
   ];
 
   return (
