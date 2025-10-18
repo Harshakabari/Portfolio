@@ -11,7 +11,7 @@ const Experience = () => {
       achievements: [
         <>
           Built and optimized the platform’s UI with{" "}
-          <span className="font-semibold text-primary">React.js</span> and{" "}
+          <span className="font-semibold text-primary">Next.js</span> and{" "}
           <span className="font-semibold text-primary">Redux</span>, implementing
           complex and responsive user interfaces with smooth state transitions.
         </>,
