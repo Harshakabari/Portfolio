@@ -10,11 +10,11 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light White & Dark Yellow (Gold) Theme */
-    --background: 0 0% 96%;
+    /* Industrial Brutalist Theme - Light */
+    --background: 0 0% 90%;
     --foreground: 0 0% 10%;
 
-    --card: 0 0% 100%;
+    --card: 129 4% 83%; /* Greenish-grey matching #D1D5D2 */
     --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
@@ -23,11 +23,11 @@ All colors MUST be HSL.
     --primary: 45 90% 50%;
     --primary-foreground: 0 0% 10%;
 
-    --secondary: 45 30% 96%;
-    --secondary-foreground: 0 0% 20%;
+    --secondary: 129 4% 75%;
+    --secondary-foreground: 0 0% 15%;
 
-    --muted: 45 20% 95%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 129 4% 70%;
+    --muted-foreground: 0 0% 45%;
 
     --accent: 35 90% 55%;
     --accent-foreground: 0 0% 10%;
@@ -35,24 +35,42 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 88%;
+    --border: 0 0% 0%; /* Black borders for light mode */
     --input: 0 0% 88%;
     --ring: 45 90% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
+  }
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(45 90% 50%), hsl(35 90% 55%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 97%));
-    --gradient-hero: radial-gradient(ellipse at top, hsl(45 90% 50% / 0.18), transparent);
-    
-    /* Effects */
-    --glow-primary: 0 0 50px hsl(45 90% 50% / 0.35);
-    --shadow-card: 0 4px 24px hsl(0 0% 0% / 0.6);
-    --shadow-hover: 0 8px 40px hsl(45 90% 50% / 0.25);
-    
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  .dark {
+    /* Industrial Brutalist Theme - Dark */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 96%;
+
+    --card: 0 0% 9%; /* neutral-900 */
+    --card-foreground: 0 0% 96%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 45 90% 50%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 0 0% 12%; /* neutral-800 */
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 45 90% 60%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 100%; /* White borders for dark mode */
+    --input: 0 0% 14.9%;
+    --ring: 45 90% 50%;
   }
 }
 

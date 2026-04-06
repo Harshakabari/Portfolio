@@ -1,86 +1,27 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
-
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  const socialLinks = [
-    {
-      icon: Github,
-      href: "https://github.com/Harshakabari",
-      label: "GitHub",
-    },
-    {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/harshakabari/",
-      label: "LinkedIn",
-    },
-    {
-      icon: Mail,
-      href: "mailto:harshakabari7@gmail.com",
-      label: "Email",
-    },
-  ];
-
   return (
-    <footer className="relative border-t border-border bg-secondary/30">
-      <div className="container mx-auto px-8 py-24">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            {/* Brand */}
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Harsh Akabari
-              </h3>
-              <p className="text-muted-foreground">
-                Full Stack Developer passionate about creating innovative web solutions.
-              </p>
-            </div>
-
-            {/* Quick Links */}
-            <div className="space-y-4">
-              <h4 className="font-semibold">Quick Links</h4>
-              <nav className="flex flex-col gap-2">
-                {["About", "Projects", "Skills", "Experience", "Contact"].map((link) => (
-                  <a
-                    key={link}
-                    href={`#${link.toLowerCase()}`}
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                  >
-                    {link}
-                  </a>
-                ))}
-              </nav>
-            </div>
-
-            {/* Social Links */}
-            <div className="space-y-4">
-              <h4 className="font-semibold">Connect With Me</h4>
-              <div className="flex gap-3">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 rounded-full bg-secondary hover:bg-primary/20 border border-border hover:border-primary transition-all duration-300 group"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-muted-foreground text-center md:text-left">
-              © {currentYear} Harsh Akabari. All rights reserved.
-            </p>
-            <p className="text-sm text-muted-foreground flex items-center gap-2">
-              Built with <Heart className="w-4 h-4 text-red-600 fill-red-600" /> by Harsh Akabari
-            </p>
-          </div>
+    <footer className="w-full max-w-7xl mx-auto py-12 px-6 md:px-8 mt-12 border-t-[4px] border-black dark:border-white/10 flex flex-col md:flex-row justify-between items-start md:items-end bg-transparent gap-10 font-mono">
+      <div className="flex flex-col items-start px-2">
+        <p className="text-[9px] font-black uppercase tracking-[0.4em] opacity-40 mb-2 italic">:: AUTHOR_METADATA</p>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+          <p className="text-sm font-black uppercase tracking-widest italic tracking-[0.1em]">
+            HARSH AKABARI
+          </p>
+          <p className="text-[10px] font-bold opacity-30 uppercase tracking-[0.2em]">
+            // 2026 // INDIA_EST_ST_P4
+          </p>
+        </div>
+      </div>
+      
+      <div className="flex flex-col hidden md:block items-center md:items-end w-full md:w-auto">
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-40 mb-3 italic">:: BUILD_STACK_V4.2</p>
+        <p className="text-[10px] font-bold opacity-60 uppercase mb-6 tracking-widest">
+          REACT + VITE + TAILWIND + FRAMER_MOTION
+        </p>
+        <div className="flex flex-wrap gap-6 md:gap-8 border-t-2 border-black/10 dark:border-white/10 pt-4 w-full md:w-auto justify-center md:justify-end">
+           <a href="https://github.com/harshakabari" target="_blank" className="text-xs font-black uppercase hover:underline underline-offset-4 decoration-2 transition-all">GITHUB</a>
+           <a href="https://linkedin.com/in/harshakabari" target="_blank" className="text-xs font-black uppercase hover:underline underline-offset-4 decoration-2 transition-all">LINKEDIN</a>
+           <a href="https://x.com/hars_o5" target="_blank" className="text-xs font-black uppercase hover:underline underline-offset-4 decoration-2 transition-all">X // TWITTER</a>
         </div>
       </div>
     </footer>
